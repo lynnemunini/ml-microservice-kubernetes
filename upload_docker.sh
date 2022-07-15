@@ -3,13 +3,13 @@
 
 # Assumes that an image is built via `run_docker.sh`
 
-# Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+dockerpath=lynnemunini/ml-microservice-api
 
-# Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-
-# Step 3:
+docker login
+docker tag ml-microservice-api $dockerpath
+docker images
 # Push image to a docker repository
+docker push $dockerpath
