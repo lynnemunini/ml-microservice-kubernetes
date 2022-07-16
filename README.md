@@ -17,6 +17,20 @@ Project goal is to operationalize this working, machine learning microservice us
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
 
+
+**Instrucrions on how to run python script and web app.**
+* To run the web app, use the following command:
+  ```python3 app.py```
+* To run the prediction script, use the following command:
+  ```./make_prediction.sh```
+* To run docker container, execute the following command:
+  ```./run_docker.sh```
+* To deploy the container on Kubernetes cluster, execute the following command:
+  ```./run_kubernetes.sh```
+* To check linting on Dockerfile and python file, execute the following command:
+  ```make lint```
+
+
 *Files Overview*
 
 * [Dockerfile](Dockerfile)
